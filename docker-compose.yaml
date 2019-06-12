@@ -1,0 +1,14 @@
+version: '2.0'
+
+services: 
+  express_sample:
+    container_name: express-sample
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    # volumes:
+    #   - '.:/project'
